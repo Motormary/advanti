@@ -20,17 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased bg-primary-white`}>
-        <div className='h-[88px] px-8 place-content-center'>
-          <Image
-          src={'/partners.svg'}
-          alt='Advanti Logo'
-          height={67}
-          width={240}
-          className='object-contain object-left max-h-[67.2px]'
-          />
-        </div>
-        {children}</body>
+      <body className={`${geistSans.variable} antialiased`}>{children}</body>
     </html>
   )
 }
