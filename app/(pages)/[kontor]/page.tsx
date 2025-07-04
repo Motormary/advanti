@@ -1,6 +1,6 @@
 import Button from '@/ui/components/button'
 import TopNav from '@/ui/components/nav/top-nav'
-import { ArrowRight, Calculator, ChevronRight, Home, Users } from 'lucide-react'
+import { ArrowRight, Calculator, Home, Users } from 'lucide-react'
 import Link from 'next/link'
 
 type props = {
@@ -81,7 +81,7 @@ export default async function Page({ params }: props) {
                     <p className="text-lg text-stone-600 mb-8 leading-relaxed">
                       Our dedicated team of professionals is here to guide you
                       through every step of your real estate journey. Whether
-                      buying or selling, we're committed to achieving the best
+                      buying or selling, we&apos;re committed to achieving the best
                       results for you.
                     </p>
                     <Button className='bg-black hover:bg-black/80 text-white'>

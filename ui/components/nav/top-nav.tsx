@@ -2,10 +2,9 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import MenuIcon from '../hamburger-menu'
 import { useState } from 'react'
-import { createPortal } from 'react-dom'
 import CloseMenu from '../close-menu'
+import MenuIcon from '../hamburger-menu'
 
 type props = {
   kontor: string
