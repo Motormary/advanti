@@ -142,10 +142,10 @@ export default function TopNav({ kontor }: props) {
             <ul>
               <p className="text-[1.5rem]">Kontorer</p>
               <li>
-                <Link href={`/${kontor}/alta`}>Alta</Link>
+                <Link href={`/alta`}>Alta</Link>
               </li>
               <li>
-                <Link href={`/${kontor}/bodo`}>Bodø</Link>
+                <Link href={`/bodo`}>Bodø</Link>
               </li>
             </ul>
             <ul>
