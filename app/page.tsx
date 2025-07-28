@@ -15,28 +15,6 @@ export default function Home() {
       </div>
       <div className="max-w-[80em] px-4 mx-auto py-10 min-h-[calc(100vh-88px)]">
         <main className="grid gap-10">
-          {/*      <section id="hero" className="relative overflow-hidden">
-            <div className="absolute flex flex-col gap-4 items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-max select-none">
-              <p className="text-white text-shadow-xs text-6xl">
-                Ditt neste kapittel starter her
-              </p>
-              <Link
-                href={'/#kontor'}
-                className="px-4 py-3 rounded-xs text-center bg-primary-white">
-                Klikk her
-              </Link>
-            </div>
-            <video autoPlay controls={false} muted loop>
-              <source src="/hero.mp4" type="video/mp4" />
-              <track
-                src="/path/to/captions.vtt"
-                kind="subtitles"
-                srcLang="en"
-                label="English"
-              />
-              Your browser does not support the video tag.
-            </video>
-          </section> */}
           <section id="kontor" className="flex flex-col gap-8">
             <div className="grid gap-4 justify-center">
               <h1 className="text-center text-balance text-white">
