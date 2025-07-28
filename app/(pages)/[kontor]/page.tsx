@@ -1,6 +1,5 @@
-import Button from '@/ui/components/button'
 import TopNav from '@/ui/components/nav/top-nav'
-import { ArrowRight, Calculator, Home, Users } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 type props = {
