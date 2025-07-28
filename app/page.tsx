@@ -43,7 +43,7 @@ export default function Home() {
                   width={800}
                   className="object-cover h-full w-full"
                 />
-                <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary-white text-5xl font-semibold text-shadow-xs">
+                <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary-white text-5xl font-semibold text-shadow-xs pointer-events-none">
                   Alta
                 </p>
               </div>
@@ -59,7 +59,7 @@ export default function Home() {
                   width={800}
                   className="object-cover h-full w-full"
                 />
-                <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary-white text-5xl font-semibold text-shadow-xs">
+                <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary-white text-5xl font-semibold text-shadow-xs pointer-events-none">
                   Bodø
                 </p>
               </div>

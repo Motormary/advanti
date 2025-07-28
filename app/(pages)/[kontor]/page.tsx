@@ -35,119 +35,51 @@ export default async function Page({ params }: props) {
             </video>
             {/* All video snippets are created by: Max Vakhtbovycn - https://www.pexels.com/@heyho/ */}
           </section>
-          <section className="py-20 px-4 sm:px-6 lg:px-8 ">
+          <section className="pt-20 px-4 sm:px-6 lg:px-8 ">
             <div className="max-w-7xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-16 items-start">
+              <div className="flex flex-col lg:flex-row lg:gap-16">
                 {/* Left Column */}
-                <div className="space-y-8">
+                <div className="grid grid-rows-2 basis-1/2">
                   <div>
-                    <h2 className="text-4xl md:text-5xl font-light text-stone-900 mb-6 leading-tight">
+                    <h2 className="font-light text-stone-900 mb-6 leading-tight">
                       Vi ønsker deg et trygt boligkjøp
                     </h2>
                     <p className="text-lg text-stone-600 mb-8 leading-relaxed">
-                      Lurer du på hvor du bør starte? Det er viktig med oversikt, og det kan du få av oss gjennom en uforpliktende prat.
+                      Lurer du på hvor du bør starte? Det er viktig med
+                      oversikt, og det kan du få av oss gjennom en uforpliktende
+                      prat.
                     </p>
-                    <div className="space-y-4">
-                      <div className="flex items-center space-x-3">
-                        <Calculator className="h-5 w-5 text-stone-700" />
-                        <span className="text-stone-700">
-                          Free market analysis
-                        </span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <Home className="h-5 w-5 text-stone-700" />
-                        <span className="text-stone-700">
-                          Professional property assessment
-                        </span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <Users className="h-5 w-5 text-stone-700" />
-                        <span className="text-stone-700">
-                          Expert local knowledge
-                        </span>
-                      </div>
-                    </div>
                   </div>
+                  <Link
+                    href={`https://partners.no/verdivurdering?alias=${kontor}`}
+                    className="px-4 py-3 rounded-xs size-fit text-white bg-secondary hover:bg-secondary/80 transition-colors">
+                    Bestill verdivurdering
+                  </Link>
                 </div>
 
                 {/* Right Column */}
-                <div className="space-y-8">
+                <div className="grid grid-rows-2 basis-1/2">
                   <div>
-                    <h2 className="text-4xl md:text-5xl font-light text-stone-900 mb-6 leading-tight">
-                      Looking for a
-                      <br />
-                      real estate agent?
+                    <h2 className="font-light text-stone-900 mb-6 leading-tight">
+                      Kompetente og engasjerte eiendomsmeglere
                     </h2>
                     <p className="text-lg text-stone-600 mb-8 leading-relaxed">
-                      Our dedicated team of professionals is here to guide you
-                      through every step of your real estate journey. Whether
-                      buying or selling, we&apos;re committed to achieving the best
-                      results for you.
+                      I Advanti er vårt eneste mål å skape verdi for kundene
+                      våre. Verdi i form av å ta ut hele potensialet i hva en
+                      bolig er verdt - men også i form av tillit og trygghet,
+                      som gir lave skuldre og kaldt hode når det trengs.
                     </p>
-                    <Button className='bg-black hover:bg-black/80 text-white'>
-                      Meet Our Team
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
                   </div>
+                  <Link
+                    href={`https://partners.no/kontor/${kontor}?tab=information#information`}
+                    className="px-4 py-3 rounded-xs size-fit text-white bg-secondary hover:bg-secondary/80 transition-colors ">
+                    Finn megler
+                  </Link>
                 </div>
               </div>
             </div>
           </section>
-
-          {/* Services Section */}
-          <section className="py-20 w-full bg-secondary-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl font-light text-stone-900 mb-4">
-                  Our Services
-                </h2>
-                <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-                  Comprehensive real estate solutions tailored to your needs
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="border-stone-200 hover:shadow-lg transition-shadow">
-                  <div className="p-8 text-center">
-                    <Home className="h-12 w-12 text-stone-700 mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-stone-900 mb-3">
-                      Property Sales
-                    </h3>
-                    <p className="text-stone-600">
-                      Expert guidance through the entire selling process with
-                      maximum market exposure.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="border-stone-200 hover:shadow-lg transition-shadow">
-                  <div className="p-8 text-center">
-                    <Calculator className="h-12 w-12 text-stone-700 mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-stone-900 mb-3">
-                      Property Valuation
-                    </h3>
-                    <p className="text-stone-600">
-                      Accurate market valuations using comprehensive data
-                      analysis and local expertise.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="border-stone-200 hover:shadow-lg transition-shadow">
-                  <div className="p-8 text-center">
-                    <Users className="h-12 w-12 text-stone-700 mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-stone-900 mb-3">
-                      Buyer Services
-                    </h3>
-                    <p className="text-stone-600">
-                      Personalized assistance to find your perfect home in the
-                      right neighborhood.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          
         </main>
       </div>
       <footer className="min-h-[316px] py-16 bg-primary"></footer>
