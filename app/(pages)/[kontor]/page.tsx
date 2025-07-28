@@ -50,9 +50,9 @@ export default async function Page({ params }: props) {
                     </p>
                   </div>
                   <Link
-                    href={`https://partners.no/verdivurdering?alias=${kontor}`}
+                    href={`https://partners.no/kontor/${kontor}?tab=information#terms`}
                     className="px-4 py-3 rounded-xs size-fit text-white bg-secondary hover:bg-secondary/80 transition-colors">
-                    Bestill verdivurdering
+                    Kontakt oss
                   </Link>
                 </div>
 
@@ -77,6 +77,9 @@ export default async function Page({ params }: props) {
                 </div>
               </div>
             </div>
+          </section>
+
+          <section className='bg-tri-gray-light py-40'>
           </section>
           
         </main>

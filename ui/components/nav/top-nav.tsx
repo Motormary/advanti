@@ -51,7 +51,7 @@ export default function TopNav({ kontor }: props) {
           </li>
           <li>
             <Link href={`https://partners.no/kontor/${kontor}?tab=information`}>
-              Om Adventi
+              Om Advanti
             </Link>
           </li>
           <li>
@@ -149,7 +149,7 @@ export default function TopNav({ kontor }: props) {
               </li>
             </ul>
             <ul>
-              <p className="text-[1.5rem] ">Om Adventi</p>
+              <p className="text-[1.5rem] ">Om Advanti</p>
               <li>
                 <Link href={`https://partners.no/om-partners?alias=${kontor}`}>
                   Om oss
