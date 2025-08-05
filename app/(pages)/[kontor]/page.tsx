@@ -15,24 +15,31 @@ export default async function Page({ params }: props) {
         <main className="grid mx-auto gap-10 w-full">
           <section
             id="hero"
-            className="relative overflow-hidden max-w-[80em] mx-auto">
-            <div className="absolute size-full bg-[rgba(44,40,37,.4)]" />
+            className="relative overflow-hidden max-w-[80em] mx-auto px-4 pb-4">
             <h1 className="sr-only">Banner section</h1>
-            <div className="absolute flex flex-col gap-4 items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-max select-none">
+            <div className="absolute flex flex-col gap-4 items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-max select-none z-50">
               <p className="text-white text-center font-reckless text-shadow-xs text-[clamp(1.5rem,5vw,3rem)]">
                 Verdiskaping i hvert steg
               </p>
               <Link
                 href={`https://partners.no/kontor/${kontor}/verdivurdering`}
                 className="px-4 py-3 rounded-xs text-center bg-secondary-blue">
-                Gratis verdivurdering{' '}
+                Bestill verdivurdering
                 <ArrowRight className="size-4 inline-block" />
               </Link>
             </div>
-            <video autoPlay controls={false} muted loop>
-              <source src="/hero.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div className="relative">
+              <div className="absolute inset-0 bg-[rgba(44,40,37,.4)] mb-4" />
+              <video
+                autoPlay
+                controls={false}
+                muted
+                loop
+                className="h-[calc(100dvh-88px)] md:h-fit object-center object-cover pb-4 -z-10">
+                <source src="/hero.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
             {/* All video snippets are created by: Max Vakhtbovycn - https://www.pexels.com/@heyho/ */}
           </section>
           <section className="pt-20 px-4 sm:px-6 lg:px-8 ">

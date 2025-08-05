@@ -17,7 +17,7 @@ export default function TopNav({ kontor }: props) {
       style={{ backgroundColor: open ? 'var(--primary)' : 'inherit' }}
       className="h-[88px] px-8 place-content-center flex justify-between relative">
       <div className="flex items-center">
-        <Link href={`/${kontor}`}>
+        <Link href={`/`}>
           <Image
             src={'/partners.svg'}
             alt="Advanti Logo"
