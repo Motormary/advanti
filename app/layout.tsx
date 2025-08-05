@@ -1,10 +1,16 @@
 import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
+import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
+})
+
+const reckless = localFont({
+  variable: '--font-reckless',
+  src: './fonts/RecklessNeue-Regular.ttf',
 })
 
 export const metadata: Metadata = {
@@ -19,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} ${reckless.variable} font-sans antialiased`}>
+        {children}
+      </body>
     </html>
   )
 }

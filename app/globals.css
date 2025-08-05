@@ -45,13 +45,14 @@
   --color-tri-gray-dark: var(--tri-gray-dark);
   --color-tri-blue-light: var(--tri-blue-light);
   --color-tri-blue: var(--tri-blue);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter);
+  --font-reckless: var(--font-reckless);
   --font-arial: Arial, Helvetica, sans-serif;
   --animate-fadeIn: var(--fadeIn);
 }
 
 body {
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -61,4 +62,8 @@ h1 {
 
 h2 {
   font-size: clamp(1.5rem,8cqw,2.5rem);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-reckless);
 }

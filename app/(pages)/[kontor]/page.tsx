@@ -16,10 +16,11 @@ export default async function Page({ params }: props) {
           <section
             id="hero"
             className="relative overflow-hidden max-w-[80em] mx-auto">
+            <div className="absolute size-full bg-[rgba(44,40,37,.4)]" />
             <h1 className="sr-only">Banner section</h1>
             <div className="absolute flex flex-col gap-4 items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-max select-none">
-              <p className="text-white text-shadow-xs text-[clamp(1.5rem,5vw,3.75rem)]">
-                Ditt neste kapittel starter her
+              <p className="text-white text-center font-reckless text-shadow-xs text-[clamp(1.5rem,5vw,3rem)]">
+                Verdiskaping i hvert steg
               </p>
               <Link
                 href={`https://partners.no/kontor/${kontor}/verdivurdering`}
@@ -79,9 +80,7 @@ export default async function Page({ params }: props) {
             </div>
           </section>
 
-          <section className='bg-tri-gray-light py-40'>
-          </section>
-          
+          <section className="bg-tri-gray-light py-40"></section>
         </main>
       </div>
       <footer className="min-h-[316px] py-16 bg-primary"></footer>
