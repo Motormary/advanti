@@ -17,7 +17,7 @@ export default function Home() {
         <main className="grid gap-10">
           <section id="kontor" className="flex flex-col gap-8">
             <div className="grid gap-4 justify-center">
-              <h1 className="text-center text-balance text-white">
+              <h1 className="text-center text-balance text-white font-bold">
                 Drømmehjemmet venter
               </h1>
               <p className="mx-auto text-center text-pretty text-xl text-slate-300 max-w-2xl">

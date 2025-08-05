@@ -31,6 +31,7 @@ export default async function Page({ params }: props) {
             <div className="relative">
               <div className="absolute inset-0 bg-[rgba(44,40,37,.4)] mb-4" />
               <video
+              tabIndex={-1}
                 autoPlay
                 controls={false}
                 muted
@@ -41,6 +42,9 @@ export default async function Page({ params }: props) {
               </video>
             </div>
             {/* All video snippets are created by: Max Vakhtbovycn - https://www.pexels.com/@heyho/ */}
+          </section>
+          <section className='max-w-7xl mx-auto'>
+            <h1 className='text-[clamp(1.5rem,5vw,2rem)] max-w-2/3 text-pretty'>Vår lokale erfaring, gir deg trygghet på at vi både ser verdien i bolig og beliggenhet, og vet hvordan vi skal stille det i best mulig lys – så verdien kommer frem.</h1>
           </section>
           <section className="pt-20 px-4 sm:px-6 lg:px-8 ">
             <div className="max-w-7xl mx-auto">
