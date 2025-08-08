@@ -19,6 +19,7 @@ export default function TopNav({ kontor }: props) {
       <div className="flex items-center">
         <Link href={`/`}>
           <Image
+            priority
             src={'/partners.svg'}
             alt="Advanti Logo"
             height={67}
@@ -163,7 +164,8 @@ export default function TopNav({ kontor }: props) {
               </li>
             </ul>
             <ul>
-              <Link href={`https://partners.no/kontor/${kontor}?tab=information#terms`}>
+              <Link
+                href={`https://partners.no/kontor/${kontor}?tab=information#terms`}>
                 <p className="text-[1.5rem]">Kontakt oss</p>
               </Link>
               <li>
