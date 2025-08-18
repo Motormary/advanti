@@ -15,7 +15,7 @@ export default function TopNav({ kontor }: props) {
   return (
     <div
       style={{ backgroundColor: open ? 'var(--primary)' : 'inherit' }}
-      className="h-[88px] px-8 place-content-center flex justify-between relative">
+      className="h-[88px] px-8 place-content-center flex justify-between relative z-[9999]">
       <div className="flex items-center">
         <Link href={`/`}>
           <Image
@@ -76,7 +76,7 @@ export default function TopNav({ kontor }: props) {
         aria-label="nav-menu"
         style={{ display: open ? 'block' : 'none' }}
         className="min-h-[398.4px] bg-primary w-full absolute left-0 bottom-0 translate-y-[100%] z-50 py-[1.75em]">
-        <nav className="mx-auto max-w-[90em] text-primary-white [&_li]:font-arial animate-fadeIn px-[4.5em]">
+        <nav className="mx-auto max-w-[90em] text-primary-white [&_li]:font-arial animate-fadeIn px-[4.5em] max-sm:text-center">
           <div className="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] md:grid-cols-[repeat(4,1fr)] gap-[1em] [&_ul]:pb-[1.75em] [&_p]:mb-[0.25em] [&>ul]:space-y-[0.5em]">
             <ul>
               <Link href={`https://partners.no/kjope?alias=${kontor}`}>
