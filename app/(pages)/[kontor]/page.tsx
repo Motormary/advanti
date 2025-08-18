@@ -112,21 +112,21 @@ export default async function Page({ params }: props) {
           </section>
           <section className="bg-tri-gray-light py-10 space-y-4 mt-16">
             <h1 className='text-center text-[clamp(1.5rem,5vw,3rem)]'>Eiendommer og boliger til salgs</h1>
-            <div className="max-w-7xl grid grid-cols-2 md:grid-cols-4 mx-auto text-center [&>*]:p-5 font-semibold text-lg [&_img]:mx-auto [&>a]:object-contain">
+            <div className="max-w-7xl grid grid-cols-2 md:grid-cols-4 mx-auto text-center py-5 sm:py-10 font-semibold text-lg [&_img]:mx-auto max-md:[&>a]:my-8">
               <Link href={`https://partners.no/eiendommer?alias=${kontor}&p=0`}>
                 <Image src="./eiendom.svg" alt='Image' width={100} height={100}/>
                 <p>Eiendommer</p>
               </Link>
               <Link href={`https://partners.no/eiendommer?at=Leisure&alias=${kontor}&p=0`}>
-                <Image src="./hytte3.svg" alt='Image' width={100} height={100} />
+                <Image src="./fritid.svg" alt='Image' width={100} height={100} />
                 <p>Fritidsboliger</p>
               </Link>
               <Link href={`https://partners.no/eiendommer?at=NewDevelopment%2CNewDevelopmentCommercial%2CNewDevelopmentLeisure&alias=${kontor}&p=0`}>
-                <Image src="./nybygg.svg" alt='Image' width={100} height={100}/>
+                <Image src="./nybygg2.svg" alt='Image' width={100} height={100}/>
                 <p>Nybygg</p>
               </Link>
               <Link href={`https://partners.no/eiendommer?at=Commercial&alias=${kontor}&p=0`}>
-                <Image src="./naering.svg" alt='Image' width={100} height={100}/>
+                <Image src="./nearing.svg" alt='Image' width={100} height={100}/>
                 <p>Næring</p>
               </Link>
             </div>
