@@ -34,7 +34,7 @@
   --fadeOut: fadeOut 0.5s ease forwards;
 }
 
-@theme {
+@theme inline {
   --color-primary: var(--primary);
   --color-primary-white: var(--primary-white);
   --color-secondary: var(--secondary);

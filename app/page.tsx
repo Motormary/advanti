@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="bg-primary opacity-0 animate-fadeIn">
+    <div className="bg-primary opacity-0 animate-fadeIn relative">
       <div className="h-[88px] px-8 place-content-center">
         <Image
           src={'/advanti-white.svg'}
@@ -64,15 +64,14 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            {/*      <div>
-              35+ år erfaring
-            </div> */}
           </section>
         </main>
+        {/* todo: Delete me */}
+        <div className="absolute flex flex-col gap-2 bottom-5 left-2">
+          <Link href="/2" className='p-2 rounded-full bg-secondary-blue'>Landing 2</Link>
+          <Link href="/3" className='p-2 rounded-full bg-secondary-blue'>Landing 3</Link>
+        </div>
       </div>
-      {/* <footer className='min-h-[316px] py-16 bg-primary'>
-
-      </footer> */}
     </div>
   )
 }
