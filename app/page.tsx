@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="bg-primary opacity-0 animate-fadeIn relative">
+    <div className="bg-primary relative">
       <div className="h-[88px] px-8 place-content-center">
         <Image
           src={'/advanti-white.svg'}
@@ -13,7 +13,7 @@ export default function Home() {
           className="object-contain object-left max-h-[67.2px]"
         />
       </div>
-      <div className="max-w-[80em] px-4 mx-auto py-10 min-h-[calc(100vh-88px)]">
+      <div className="max-w-[80em] px-4 mx-auto py-10 min-h-[calc(100vh-88px)] opacity-0 animate-fadeIn">
         <main className="grid gap-10">
           <section id="kontor" className="flex flex-col gap-8">
             <div className="grid gap-4 justify-center">
@@ -68,6 +68,7 @@ export default function Home() {
         </main>
         {/* todo: Delete me */}
         <div className="absolute flex flex-col gap-2 bottom-5 left-2">
+          <Link href="/" className='p-2 rounded-full bg-tri-gray-dark'>Landing 1</Link>
           <Link href="/2" className='p-2 rounded-full bg-secondary-blue'>Landing 2</Link>
           <Link href="/3" className='p-2 rounded-full bg-secondary-blue'>Landing 3</Link>
         </div>
