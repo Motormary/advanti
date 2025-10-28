@@ -1,12 +1,12 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="bg-primary relative">
       <div className="h-[88px] px-8 place-content-center">
         <Image
-          src={'/advanti-white.svg'}
+          src={"/advanti-white.svg"}
           alt="Advanti Logo"
           height={67}
           width={240}
@@ -21,9 +21,13 @@ export default function Home() {
                 Drømmehjemmet venter
               </h1>
               <p className="mx-auto text-center text-pretty text-xl text-slate-300 max-w-2xl">
-                Med mer enn 35 års erfaring fra salg av enebolig, leilighet,
-                fritidsbolig og næringsbygg er vi klare til å hjelpe deg, og vi
-                deler gjerne av vår erfaring.
+                Med lang erfaring og spisskompetanse innen markedsføring står vi
+                klare til å bistå deg – enten du skal kjøpe eller selge
+                enebolig, leilighet, fritidsbolig eller næringsbygg.
+              </p>
+              <p className="mx-auto text-center text-pretty text-xl text-slate-300 max-w-2xl">
+                Vi deler gjerne av vår kunnskap og erfaring for å sikre deg en
+                best mulig prosess og et godt resultat.
               </p>
             </div>
             <h2 className="text-2xl font-semibold text-center text-slate-200">
@@ -37,7 +41,7 @@ export default function Home() {
                   className="inset-0 bg-[rgba(44,40,37,.4)] group-hover:opacity-60 transition-opacity duration-500 absolute"
                 />
                 <Image
-                  src={'/alta.jpeg'}
+                  src={"/alta.jpeg"}
                   alt="alta"
                   height={800}
                   width={800}
@@ -53,7 +57,7 @@ export default function Home() {
                   className="inset-0 bg-[rgba(44,40,37,.4)] group-hover:opacity-60 transition-opacity duration-500 absolute"
                 />
                 <Image
-                  src={'/bodo.jpeg'}
+                  src={"/bodo.jpeg"}
                   alt="bodo"
                   height={800}
                   width={800}
@@ -66,13 +70,7 @@ export default function Home() {
             </div>
           </section>
         </main>
-        {/* todo: Delete me */}
-        <div className="absolute flex flex-col gap-2 bottom-5 left-2">
-          <Link href="/" className='p-2 rounded-full bg-tri-gray-dark'>Landing 1</Link>
-          <Link href="/2" className='p-2 rounded-full bg-secondary-blue'>Landing 2</Link>
-          <Link href="/3" className='p-2 rounded-full bg-secondary-blue'>Landing 3</Link>
-        </div>
       </div>
     </div>
-  )
+  );
 }

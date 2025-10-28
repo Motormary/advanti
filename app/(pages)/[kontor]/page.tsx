@@ -1,16 +1,17 @@
-import MeglerImg from '@/public/megler.svg'
-import KontaktImg from '@/public/personlig.svg'
-import Footer from '@/ui/components/nav/footer'
-import TopNav from '@/ui/components/nav/top-nav'
-import Image from 'next/image'
-import Link from 'next/link'
+import MeglerImg from "@/public/megler.svg";
+import KontaktImg from "@/public/personlig.svg";
+import ContactForm from "@/components/contact/contact";
+import Footer from "@/components/nav/footer";
+import TopNav from "@/components/nav/top-nav";
+import Image from "next/image";
+import Link from "next/link";
 
 type props = {
-  params: Promise<{ kontor: string }>
-}
+  params: Promise<{ kontor: string }>;
+};
 
 export default async function Page({ params }: props) {
-  const { kontor } = await params
+  const { kontor } = await params;
   return (
     <div className="bg-primary-white opacity-0 animate-fadeIn">
       <TopNav kontor={kontor} />
@@ -18,7 +19,8 @@ export default async function Page({ params }: props) {
         <main className="grid mx-auto gap-10 w-full">
           <section
             id="hero"
-            className="relative overflow-hidden max-w-[80em] mx-auto px-4 pb-4">
+            className="relative overflow-hidden max-w-[80em] mx-auto px-4 pb-4"
+          >
             <h1 className="sr-only">Banner section</h1>
             <div className="absolute flex flex-col gap-4 items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-max select-none z-50">
               <p className="text-white text-center font-reckless text-shadow-xs text-[clamp(1.5rem,5vw,3rem)]">
@@ -26,7 +28,8 @@ export default async function Page({ params }: props) {
               </p>
               <Link
                 href={`https://partners.no/kontor/${kontor}/verdivurdering`}
-                className="px-4 py-3 rounded-xs text-center bg-secondary-blue hover:bg-secondary-blue/90 transition-colors">
+                className="px-4 py-3 rounded-xs text-center bg-secondary-blue hover:bg-secondary-blue/90 transition-colors"
+              >
                 Bestill verdivurdering
               </Link>
             </div>
@@ -39,7 +42,8 @@ export default async function Page({ params }: props) {
                 controls={false}
                 muted
                 loop
-                className="h-[calc(100dvh-88px)] md:h-fit object-center object-cover pb-4 -z-10">
+                className="h-[calc(100dvh-88px)] md:h-fit object-center object-cover pb-4 -z-10"
+              >
                 <source src="/hero.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -77,7 +81,8 @@ export default async function Page({ params }: props) {
                   </p>
                   <Link
                     href={`https://partners.no/kontor/${kontor}/kontakt`}
-                    className="px-4 py-3 rounded-xs size-fit text-white mb-4 bg-secondary hover:bg-secondary/80 transition-colors">
+                    className="px-4 py-3 rounded-xs size-fit text-white mb-4 bg-secondary hover:bg-secondary/80 transition-colors"
+                  >
                     Kontakt oss
                   </Link>
                 </div>
@@ -104,7 +109,8 @@ export default async function Page({ params }: props) {
                   </p>
                   <Link
                     href={`https://partners.no/kontor/${kontor}?tab=information#information`}
-                    className="px-4 py-3 rounded-xs size-fit text-white bg-secondary hover:bg-secondary/80 transition-colors ">
+                    className="px-4 py-3 rounded-xs size-fit text-white bg-secondary hover:bg-secondary/80 transition-colors "
+                  >
                     Finn megler
                   </Link>
                 </div>
@@ -126,7 +132,8 @@ export default async function Page({ params }: props) {
                 <p>Eiendommer</p>
               </Link>
               <Link
-                href={`https://partners.no/eiendommer?at=Leisure&alias=${kontor}&p=0`}>
+                href={`https://partners.no/eiendommer?at=Leisure&alias=${kontor}&p=0`}
+              >
                 <Image
                   src="./fritid.svg"
                   alt="Image"
@@ -136,7 +143,8 @@ export default async function Page({ params }: props) {
                 <p>Fritidsboliger</p>
               </Link>
               <Link
-                href={`https://partners.no/eiendommer?at=NewDevelopment%2CNewDevelopmentCommercial%2CNewDevelopmentLeisure&alias=${kontor}&p=0`}>
+                href={`https://partners.no/eiendommer?at=NewDevelopment%2CNewDevelopmentCommercial%2CNewDevelopmentLeisure&alias=${kontor}&p=0`}
+              >
                 <Image
                   src="./nybygg2.svg"
                   alt="Image"
@@ -146,7 +154,8 @@ export default async function Page({ params }: props) {
                 <p>Nybygg</p>
               </Link>
               <Link
-                href={`https://partners.no/eiendommer?at=Commercial&alias=${kontor}&p=0`}>
+                href={`https://partners.no/eiendommer?at=Commercial&alias=${kontor}&p=0`}
+              >
                 <Image
                   src="./nearing.svg"
                   alt="Image"
@@ -157,9 +166,23 @@ export default async function Page({ params }: props) {
               </Link>
             </div>
           </section>
+          <section id="contact" className="my-10 pb-10">
+            <div className="max-w-7xl grid justify-center gap-8 mx-auto px-4 sm:px-6 lg:px-8">
+              <div>
+                <h2 className="text-balance text-center sm:text-left mb-10">
+                  {" "}
+                  Skal du kjøpe eller selge bolig? <br />
+                </h2>
+                <p className="text-xl ">
+                  Fyll ut kontaktskjema så tar vi kontakt
+                </p>
+              </div>
+              <ContactForm />
+            </div>
+          </section>
         </main>
       </div>
       <Footer kontor={kontor} />
     </div>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @keyframes fadeIn {
   from {
@@ -32,6 +32,11 @@
   --tri-blue: #e7f5f7;
   --fadeIn: fadeIn 0.5s ease-in-out forwards;
   --fadeOut: fadeOut 0.5s ease forwards;
+  --destructive: oklch(0.577 0.245 27.325);
+  --radius: 0.65rem;
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
 }
 
 @theme inline {
@@ -45,10 +50,12 @@
   --color-tri-gray-dark: var(--tri-gray-dark);
   --color-tri-blue-light: var(--tri-blue-light);
   --color-tri-blue: var(--tri-blue);
+  --color-destructive: var(--destructive);
   --font-sans: var(--font-inter);
   --font-reckless: var(--font-reckless);
   --font-arial: Arial, Helvetica, sans-serif;
   --animate-fadeIn: var(--fadeIn);
+  --color-ring: var(--primary);
 }
 
 @layer base {
