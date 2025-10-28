@@ -19,7 +19,7 @@ export default async function Page({ params }: props) {
         <main className="grid mx-auto gap-10 w-full">
           <section
             id="hero"
-            className="relative overflow-hidden w-[100vw] h-[100svh] md:h-[70svh]"
+            className="relative overflow-hidden min-h-[700px] h-[100svh] md:h-[70svh]"
           >
             <h1 className="sr-only">Banner section</h1>
             <div className="absolute flex flex-col gap-4 items-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-max select-none z-50">
@@ -33,7 +33,7 @@ export default async function Page({ params }: props) {
                 Bestill verdivurdering
               </Link>
             </div>
-            <div className="relative bg-red-500">
+            <div className="relative">
               <div className="absolute inset-0 bg-[rgba(44,40,37,.4)]" />
               <video
                 playsInline
@@ -42,7 +42,8 @@ export default async function Page({ params }: props) {
                 controls={false}
                 muted
                 loop
-                className="h-[calc(100svh-88px)] w-[100vw] object-center object-cover -z-10"
+                poster="/poster.jpg"
+                className="h-[calc(100svh-88px)] min-h-[700px] w-[100vw] object-center object-cover -z-10"
               >
                 <source src="/hero.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
