@@ -21,7 +21,7 @@ export default function TopNav({ kontor }: props) {
         <Link href={`/`}>
           <Image
             priority
-            src={`/logo${kontor}.png`}
+            src={`/partners.svg`}
             alt="Advanti Logo"
             height={67}
             width={240}
@@ -54,7 +54,7 @@ export default function TopNav({ kontor }: props) {
           </li>
           <li>
             <Link href={`https://partners.no/kontor/${kontor}?tab=information`}>
-              Om Advanti
+              Om Advanti {kontor === "alta" ? "Alta" : "Bodø"}
             </Link>
           </li>
           <li>
@@ -162,7 +162,9 @@ export default function TopNav({ kontor }: props) {
               </li>
             </ul>
             <ul>
-              <p className="text-[1.5rem] ">Om Advanti</p>
+              <p className="text-[1.5rem] ">
+                Om Advanti {kontor === "alta" ? "Alta" : "Bodø"}
+              </p>
               <li>
                 <Link href={`https://partners.no/om-partners?alias=${kontor}`}>
                   Om oss

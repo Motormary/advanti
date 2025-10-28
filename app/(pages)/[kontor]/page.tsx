@@ -53,9 +53,10 @@ export default async function Page({ params }: props) {
           </section>
           <section className="max-w-7xl mx-auto">
             <h1 className="text-[clamp(1.5rem,5vw,2rem)] md:max-w-2/3 text-pretty px-4">
-              Vår lokale erfaring, gir deg trygghet på at vi både ser verdien i
-              bolig og beliggenhet, og vet hvordan vi skal stille det i best
-              mulig lys – så verdien kommer frem.
+              Med vår lange erfaring i {kontor === "alta" ? "Alta" : "Bodø"},
+              gir deg trygghet på at vi både ser verdien i bolig og beliggenhet,
+              og vet hvordan vi skal stille det i best mulig lys – så verdien
+              kommer frem.
             </h1>
           </section>
           <section className="px-4 sm:px-6 lg:px-8">

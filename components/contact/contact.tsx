@@ -17,12 +17,7 @@ import { Textarea } from "../ui/textarea";
 import { Checkbox } from "../ui/checkbox";
 
 const contactSchema = z.object({
-  name: z.string().min(1, { message: "Fornavn er påkrevd" }),
-  surname: z.string().min(1, { message: "Etternavn er påkrevd" }),
-  zip: z
-    .string()
-    .min(4, { message: "Postnummer må være minst 4 siffer" })
-    .regex(/^\d+$/, { message: "Postnummer må kun inneholde tall" }),
+  name: z.string().min(1, { message: "Navn er påkrevd" }),
   phone: z.string().min(8, { message: "Telefonnummer er påkrevd" }),
   email: z.string().email({ message: "Gyldig e-post er påkrevd" }),
   tos: z.boolean().refine((val) => val === true, {
@@ -36,8 +31,6 @@ export default function ContactForm() {
     resolver: zodResolver(contactSchema),
     defaultValues: {
       name: "",
-      surname: "",
-      zip: "",
       phone: "",
       email: "",
       tos: false,
@@ -63,45 +56,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel className="sr-only">Fornavn</FormLabel>
               <FormControl>
-                <Input
-                  className="rounded-sm"
-                  placeholder="Fornavn *"
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="surname"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="sr-only">Etternavn</FormLabel>
-              <FormControl>
-                <Input
-                  className="rounded-sm"
-                  placeholder="Etternavn *"
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />{" "}
-        <FormField
-          control={form.control}
-          name="zip"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel className="sr-only">Postnummer</FormLabel>
-              <FormControl>
-                <Input
-                  className="rounded-sm"
-                  placeholder="Postnummer *"
-                  {...field}
-                />
+                <Input className="rounded-sm" placeholder="Navn *" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
