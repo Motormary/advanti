@@ -45,7 +45,7 @@ export default async function Page({ params }: props) {
                 poster="/poster.jpg"
                 className="h-[calc(100svh-88px)] min-h-[620px] w-[100vw] object-center object-cover -z-10"
               >
-                <source src="/hero.mp4" type="video/mp4" />
+                <source src="/hero_ny.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
