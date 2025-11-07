@@ -35,7 +35,7 @@ export default function Home() {
             </h2>
 
             <div className="flex flex-col md:flex-row gap-8">
-              <div className="relative overflow-hidden cursor-pointer group">
+              <div className="relative overflow-hidden cursor-pointer group max-w-[608px] max-h-[405px]">
                 <Link
                   href={`/alta`}
                   className="inset-0 bg-[rgba(44,40,37,.4)] group-hover:opacity-60 transition-opacity duration-500 absolute"
@@ -51,7 +51,7 @@ export default function Home() {
                   Alta
                 </p>
               </div>
-              <div className="relative overflow-hidden cursor-pointer group">
+              <div className="relative overflow-hidden cursor-pointer group max-w-[608px] max-h-[405px]">
                 <Link
                   href={`/bodo`}
                   className="inset-0 bg-[rgba(44,40,37,.4)] group-hover:opacity-60 transition-opacity duration-500 absolute"
