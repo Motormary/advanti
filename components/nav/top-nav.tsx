@@ -58,6 +58,9 @@ export default function TopNav({ kontor }: props) {
             </Link>
           </li>
           <li>
+            <Link href={`https://bolignytt${kontor}.no/`}>Nyheter</Link>
+          </li>
+          <li>
             <Link
               href={`https://partners.no/kontor/${kontor}?tab=information#terms`}
             >
@@ -115,11 +118,6 @@ export default function TopNav({ kontor }: props) {
                   Næring
                 </Link>
               </li>
-              <li>
-                <Link href={`https://partners.no/eiendommer?alias=${kontor}`}>
-                  Boligvarsling
-                </Link>
-              </li>
             </ul>
             <ul>
               <Link href={`https://partners.no/selge?alias=${kontor}`}>
@@ -175,6 +173,14 @@ export default function TopNav({ kontor }: props) {
                   href={`https://partners.no/kontor/${kontor}?tab=information#information`}
                 >
                   Ansatte
+                </Link>
+              </li>
+            </ul>
+            <ul>
+              <p className="text-[1.5rem]">Nyheter</p>
+              <li>
+                <Link href={`https://bolignytt${kontor}.no`}>
+                  {`Bolignytt`}
                 </Link>
               </li>
             </ul>
