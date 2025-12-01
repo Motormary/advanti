@@ -61,11 +61,7 @@ export default function TopNav({ kontor }: props) {
             <Link href={`https://bolignytt${kontor}.no/`}>Nyheter</Link>
           </li>
           <li>
-            <Link
-              href={`https://partners.no/kontor/${kontor}?tab=information#terms`}
-            >
-              Kontakt oss
-            </Link>
+            <Link href={`/${kontor}/#kontakt`}>Kontakt oss</Link>
           </li>
         </ul>
       </nav>

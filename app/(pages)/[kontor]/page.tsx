@@ -1,4 +1,4 @@
-import MeglerImg from "@/public/megler.svg";
+import MeglerImg from "@/public/staff_optimized.jpg";
 import KontaktImg from "@/public/personlig.svg";
 import ContactForm from "@/components/contact/contact";
 import Footer from "@/components/nav/footer";
@@ -78,8 +78,10 @@ export default async function Page({ params }: props) {
                   </h2>
                   <p className="text-lg text-stone-600 mb-8 leading-relaxed">
                     La oss vise deg hvordan lokalkunnskap og personlig
-                    oppfølging kan gjøre en forskjell. Ta kontakt for en
-                    uforpliktende prat.
+                    oppfølging kan gjøre en forskjell. Ring oss, send en mail
+                    eller kom innom vårt kontor på{" "}
+                    {kontor === "alta" ? "Amfi Alta" : "Central Atrium"} for en
+                    kaffe og uforpliktende prat.
                   </p>
                   <Link
                     href={`https://partners.no/kontor/${kontor}/kontakt`}
@@ -90,9 +92,9 @@ export default async function Page({ params }: props) {
                 </div>
 
                 {/* Second row */}
-                <div className="max-h-[310px] lg:max-h-96 overflow-hidden md:col-start-2 md:row-start-2">
+                <div className="max-h-[310px] place-content-end lg:max-h-96 overflow-hidden md:col-start-2 md:row-start-2">
                   <Image
-                    className="mr-auto"
+                    className="mr-auto rounded-sm"
                     src={MeglerImg.src}
                     alt="people talking"
                     width={500}

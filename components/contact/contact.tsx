@@ -46,8 +46,9 @@ export default function ContactForm() {
   return (
     <Form {...form}>
       <form
+        id="kontakt"
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 rounded-sm max-w-[40rem]"
+        className="space-y-8 rounded-sm max-w-[40rem] scroll-mt-40"
       >
         <FormField
           control={form.control}
